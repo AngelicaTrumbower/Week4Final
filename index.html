@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="fontawesome.com">
+    <title>MovieFinder</title>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>Movie Mania</h1>
+        </div>
+        <div class="nav__links">
+          <a href="index.html" class="nav__link hover-effect">Home</a>
+          <a href="" class="nav__link hover-effect"
+            >Discover Your <span class="blue">Movie</span></a>
+          <a href="" class="nav__link btn">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <form id="input__form" >
+          <input 
+              id="search__input"
+              type="text"
+              placeholder="Movie Title, Year, or Keyword"
+              class="input"/>
+          <button type="submit" class="input__btn btn" >Search Now
+          </button>
+        </form>
+        <div class="search__container">
+          <div class="search__header">
+            <img src="./assets/undraw_horror_movie_3988.svg" class="img" />
+            <div class="search__section">
+              <h1 class="search__title">Your Gateway to the Movie Universe</h1>
+              <h2 class="search__title">
+              Uncover hidden gems and popular shows. Find the
+              <span class="blue">perfect movie for every moment!</span>
+              </h2>
+            </div>
+            <img src="./assets/undraw_home_cinema_l7yl (1).svg" class="img" />
+          </div>
+          <div class="img__wrapper">
+          </div>
+          <figure class="img__wrapper">
+            <img
+              src="./assets/undraw_movie_night_re_9umk.svg"
+              class="img__solo img"
+            />
+          </figure>
+        </div>
+        <div class="movie__container">
+            <div class="movie__listing" id="movie1"></div>
+            <div class="movie__listing" id="movie2"></div>
+            <div class="movie__listing" id="movie3"></div>
+            <div class="movie__listing" id="movie4"></div>
+            <div class="movie__listing" id="movie5"></div>
+            <div class="movie__listing" id="movie6"></div>
+            <div class="movie__listing" id="movie7"></div>
+            <div class="movie__listing" id="movie8"></div>
+            <div class="movie__listing" id="movie9"></div>
+        </div>
+    </div>
+  <script src="index.js"></script>
+  </body>
+</html>
