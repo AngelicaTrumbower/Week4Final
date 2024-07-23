@@ -1,4 +1,3 @@
-const apiKey = 'https://www.omdbapi.com/?i=tt3896198&apikey=72e6749a&s=';
 const searchForm = document.getElementById("input__form");
 
 
