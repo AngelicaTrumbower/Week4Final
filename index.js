@@ -13,7 +13,7 @@ document.getElementById('input__form').addEventListener('submit', function (even
 
 async function fetchMovies(event) {
     const searchInput = document.getElementById("search__input").value;
-    const apiEnd = `http://www.omdbapi.com/?i=tt3896198&apikey=72e6749a&s=${encodeURIComponent(searchInput)}`;
+    const apiEnd = `https://www.omdbapi.com/?i=tt3896198&apikey=72e6749a&s=${encodeURIComponent(searchInput)}`;
 
     const movies = await fetch(apiEnd);
     const movieData = await movies.json();
