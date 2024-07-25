@@ -1,10 +1,13 @@
 /* color: #38BDAA */
 
 body {
-    margin: 0 auto;
-    padding: 0;
     box-sizing: border-box;
     background-color: #000000;
+}
+
+.page__container {
+    height: 100vh;
+    margin: 0 auto;
 }
 
 @keyframes  float {
@@ -101,12 +104,18 @@ h2 {
 /*   LANDING PAGE   */
 
 .container {
-    margin: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+
 }
 
 .row {
-    max-width: 100vw;
-    padding: 0 0px;
+    width: 1200px;
+    height: 1200px;
 }
 
 .search__container {
@@ -201,35 +210,68 @@ h2 {
 
 /*     MOVIES      */
 
-
-.post__search {
+.filter {
     width: 100%;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+}
+#sliderContainer {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+  
+.slider {
+-webkit-appearance: none;
+appearance: none;
+width: 100%;
+height: 10px;
+background: #d3d3d3;
+outline: none;
+opacity: 0.7;
+transition: opacity .15s ease-in-out;
 }
 
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 20px;
+height: 20px;
+background: #4caf50;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 20px;
+height: 20px;
+background: #4caf50;
+cursor: pointer;
+}
 
 .movie__container {
     color:aliceblue;
     width: 100%;
     text-align: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 24px;
     visibility: hidden;
     position: absolute;
-    top: 290px;
-    left: 65px;
+    top: 20rem;
+    max-width: 1200px;
 }
 
 .movie__listing {
     color: aliceblue;
-    width: 31.5%;
+    width: 33%;
     border: 4px solid #38BDAA;
     border-right: none;
     border-left: none;
     padding-right: 3px;
+    justify-content: center;
+    align-items: center;
 }
 @keyframes  float-rside {
     0% {
