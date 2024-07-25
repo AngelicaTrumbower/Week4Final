@@ -33,7 +33,15 @@
               class="input"/>
               <button type="submit" class="input__btn btn" >Search Now
               </button>
-          </form>         
+            </form>         
+          <div class="filter">
+            <select id="filter" onclick="filterMovies(event)" >
+              <option value disabled selected>Sort</option>
+              <option value="Title:A-Z">Title:A-Z</option>
+              <option value="Year:New to Old">Year:New to Old</option>
+              <option value="Year:Old to New">Year:Old to New</option>
+            </select>
+          </div>
           <div class="search__container">
             <div class="search__header">
               <img src="./assets/undraw_horror_movie_3988.svg" class="img" />
@@ -54,14 +62,6 @@
             </figure>
           </div>
           <div class="movie__container">
-            <div class="filter">
-              <select id="filter" onclick="filterMovies(event)" >
-                <option value disabled selected>Sort</option>
-                <option value="Title:A-Z">Title:A-Z</option>
-                <option value="Year:New to Old">Year:New to Old</option>
-                <option value="Year:Old to New">Year:Old to New</option>
-              </select>
-            </div>
             <div class="movie__listing" id="movie1"></div>
             <div class="movie__listing" id="movie2"></div>
             <div class="movie__listing" id="movie3"></div>
