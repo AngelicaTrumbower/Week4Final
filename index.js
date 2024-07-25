@@ -22,8 +22,8 @@ async function fetchMovies(event) {
 };   
 
 function displayMovies(movies) {
-    for (let i = 0; i < 9; i++){
-        const movieContainer = document.getElementById(`movie${i + 1}`);
+    const movieContainers = Array.from({length: 9}, (_, i) => document.getElementById(`movie${i + 1}`));
+    movieContainers.map((movieContainer, i) => {
         if (movieContainer) {
             if (movies && movies[i]) {
                 movieContainer.innerHTML = `
@@ -34,8 +34,8 @@ function displayMovies(movies) {
                 movieContainer.innerHTML = "";
             };
         };
-    };
-};
+    });
+}
 
 function filterMovies() {
     const filterValue = filter.value;
